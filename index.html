@@ -22,14 +22,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="assets/js/html2canvas.js"></script>
-
-  <style>
-    
-  </style>
 </head>
-
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
@@ -119,46 +113,19 @@
       </div>
     </section> -->
     <!-- End Testimonials Section -->
-
-    <!-- User Module Section -->
-    <script>
-      function doCapture() {
-          window.scrollTo(0, 0);
-          html2canvas(document.getElementById("capture")).then(function (canvas) {
-              // Create an AJAX object
-              var ajax = new XMLHttpRequest();
-              // Setting method, server file name, and asynchronous
-              ajax.open("POST", "save-capture.php", true);
-              // Setting headers for POST method
-              ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-              // Sending image data to server
-              ajax.send("image=" + canvas.toDataURL("image/jpeg", 0.9));
-              // Receiving response from server
-              // This function will be called multiple times
-              ajax.onreadystatechange = function () {
-                  // Check when the requested is completed
-                  if (this.readyState == 4 && this.status == 200) {
-                      // Displaying response from server
-                      console.log(this.responseText);
-                  }
-              };
-          });
-      }
-    </script>
-    <button onclick="doCapture();">Capture</button>
-    <section id="capture">
+    <section>
       <div class="container">
-        <div class="grid-wrap">
-          <div class="grid">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ullam sint voluptatum nobis corporis deserunt minus. Porro voluptatum provident sunt quae. Sint quo consectetur fugit dolores earum officia impedit quae, veritatis eum, repudiandae odit quisquam cum non incidunt. Voluptatibus ducimus nobis et incidunt aspernatur voluptates, aliquid dolorum ipsa rem sequi tenetur consequuntur accusamus dolore quia animi nesciunt a cum totam blanditiis temporibus. Voluptatum obcaecati similique, laudantium nostrum harum excepturi reprehenderit modi perferendis atque nam provident ducimus officiis pariatur sint doloribus iure magni voluptatibus quos voluptates repellat, quisquam ad! Similique sequi autem officiis deserunt. Id ex, optio tempore praesentium alias velit?
+        <div class="row">
+          <div class="col-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi ipsa totam repellat laudantium tempore perferendis, tenetur saepe ullam, culpa libero id porro quibusdam ex earum quis tempora corrupti illo, asperiores sed! Placeat libero, ad, iusto voluptatibus, perferendis obcaecati tempora quaerat officia vel dicta a dolorum fuga modi! Vero libero deleniti, voluptatum in delectus repellendus asperiores unde modi impedit, tempore maxime assumenda aperiam eos. Illum rerum tempora repellat placeat? Repudiandae dolorem nemo pariatur at tempora modi nulla minus magnam ullam in. Repudiandae vitae provident sed officiis dicta doloribus, perferendis, amet mollitia eligendi ipsum aliquam culpa. Debitis laborum vel velit dolorem fugit, nisi perferendis a veritatis, sed aliquam atque voluptate fuga nesciunt recusandae consequuntur, corporis eaque aperiam autem? Cumque, eum voluptate facilis, tenetur similique obcaecati quasi possimus optio neque consequatur perspiciatis laudantium quam nisi ad quae non praesentium delectus dolor ipsa tempora ipsam assumenda ipsum sunt necessitatibus? Ipsum blanditiis distinctio qui eveniet dolorem fuga quia perspiciatis. Laborum necessitatibus quibusdam odio inventore nihil molestiae voluptates magni neque, fuga voluptas sapiente ab, dolores nulla veniam hic alias. Dolore quaerat sequi itaque id consectetur adipisci minima fugiat ipsum perferendis asperiores fuga, porro vero quibusdam non recusandae quod! Dolore enim nisi reiciendis, non obcaecati repellat?</p>
           </div>
-          <div class="grid">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ullam sint voluptatum nobis corporis deserunt minus. Porro voluptatum provident sunt quae. Sint quo consectetur fugit dolores earum officia impedit quae, veritatis eum, repudiandae odit quisquam cum non incidunt. Voluptatibus ducimus nobis et incidunt aspernatur voluptates, 
-          </div>
+          <div class="col-7"></div>
         </div>
       </div>
     </section>
-    <!-- User Module Section End -->
+
+
+
   </main><!-- End #main -->
 
 
